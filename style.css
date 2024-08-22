@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    ul {
+        gap: 2rem;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .C-title {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3 {
+        padding: 4rem 2rem;
+    }
+
+    .card {
+        width: 20rem;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .Container-card-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .icon {
+        margin-top: 1rem;
+    }
+
+    .C-title h1 {
+        font-size: 3.5rem;
+    }
+
+    .C-title {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
+    .Sobre-nos {
+        flex-direction: column;
+    }
+
+    .Sobre-nos img {
+        width: 100%;
+    }
+
+    .Sobre-nos-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .C-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .C-title p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    ul {
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .Sobre-nos-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .Sobre-nos-title p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3 {
+        padding: 3rem 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container-form {
+        padding: 1rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #d3ad7f;
+    border-radius: 5rem;
+}
+
+.background {
+    background-image: url(background2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header ul {
+    gap: 2rem;
+}
+
+header ul li a {
+    color: #d3ad7f;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+header ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #d3ad7f;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-left: 5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon span {
+    margin-right: 5rem;
+}
+
+.Icone ion-icon {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+hr {
+    border-bottom: solid 0.1px;
+    color: rgb(54, 46, 46);
+    margin-top: 15px;
+}
+
+.C-title {
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+.C-title h1 {
+    color: #fff;
+    font-size: 4.8rem;
+}
+
+.C-title p {
+    color: rgb(231, 208, 208);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.C-title button {
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.C-title button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.C-title button:hover {
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+.section-1  h1{
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.section-1 span {
+    color: #d3ad7f;
+}
+
+.section-1 {
+    padding: 5rem;
+    background-image: url(background2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.Sobre-nos{
+    display: flex;
+    align-items: center;
+    background-color: #13131a;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.Sobre-nos img {
+    max-width: 100%;
+    width: 80rem;
+    height: auto;
+}
+
+.Sobre-nos-title {
+    margin-left: 1.3rem;
+}
+
+.Sobre-nos-title h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.Sobre-nos-title p {
+    line-height: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+    width: 45rem;
+}
+
+.Sobre-nos-title button {
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.Sobre-nos-title button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.Sobre-nos-title button:hover {
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+.section-2 {
+    padding: 5rem;
+    background-image: url(background2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-2 h1 {
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.section-2 span {
+    color: #d3ad7f;
+}
+
+.Container-card-1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+}
+
+.card  {
+    border: solid 1px rgba(255, 255, 255, .3);
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 25rem;
+    height: 23rem;
+    background-color: rgba(19, 19, 26, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.card button {
+    margin-top: 1rem;
+    background-color: #d3ad7f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card span {
+    color: #fff;
+    font-weight: lighter;
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.card:hover {
+    transition: 0.5s all;
+    transform: scale(1.05);
+    background-color: rgba(19, 19, 26, 1);
+}
+
+.section-3 {
+    padding: 5rem 10rem 0 10rem;
+    background-image: url(background2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-3 h1 {
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    background-color: #13131a;
+    padding: 2rem;
+    width: 50rem;
+    height: auto;
+}
+
+form h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.inputform {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    margin-top: 1rem;
+    background: #000;
+}
+
+.inputform input {
+    width: 100%;
+    padding: 1.5rem;
+    background: #000;
+    color: #fff;
+}
+
+.inputform span {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+form button {
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+form button:hover {
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
